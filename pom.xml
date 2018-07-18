@@ -18,8 +18,9 @@
         </configuration>
    </plugin>
   </plugins>
-  
-  <dependencyManagement>
+</build>
+
+<dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.aem.trainig</groupId>
@@ -28,9 +29,7 @@
                 <scope>provided</scope>
             </dependency>
         </dependencies>
-    </dependencyManagement>
-
-</build>
+</dependencyManagement>
 
 
 
