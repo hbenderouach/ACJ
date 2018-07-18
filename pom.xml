@@ -3,4 +3,36 @@
   <groupId>com.aem.trainig</groupId>
   <artifactId>first</artifactId>
   <version>1</version>
+  
+  
+  <build>
+  <plugins>
+      <plugin>
+        <groupId>com.aem.trainig</groupId>
+        <artifactId>jgitflow-maven-plugin</artifactId>
+        <version>1.0-m5.1</version>
+        <configuration>
+            <flowInitContext>
+                <masterBranchName>master</masterBranchName>
+                <developBranchName>develop</developBranchName>
+                <featureBranchPrefix>feature-</featureBranchPrefix>
+                <releaseBranchPrefix>release-</releaseBranchPrefix>
+                <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+                <versionTagPrefix>version-</versionTagPrefix>
+            </flowInitContext>
+            <username>GIT_USERNAME</username>
+            <password>GIT_PASSWORD</password>
+            <noDeploy>true</noDeploy>
+            <squash>true</squash>
+            <scmCommentPrefix>[RELEASE] </scmCommentPrefix>
+        </configuration>
+    </plugin>
+  <plugins>
+</build>
+
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.aem.trainig</groupId>
+<artifactId>my-project</artifactId>
+<version>1.0-SNAPSHOT</version>
+
 </project>
